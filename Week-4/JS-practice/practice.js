@@ -42,37 +42,45 @@
 // ------------------------------------------------------------------------------
 // practice-3
 
-// const list1 = [];
-// const list2 = [];
+const list1 = [];
+const list2 = [];
 
-// while (true) {
-//   const number = prompt("enter your numbers (enter quit to exit): ");
-//   if (number.toLowerCase().trim() === "quit") {
-//     break;
-//   }
-//   list1.push(+number);
-// }
+while (true) {
+  const number = prompt("enter your numbers (enter quit to exit): ");
+  if (number.toLowerCase().trim() === "quit") {
+    break;
+  }
+  list1.push(+number);
+}
 
-// while (true) {
-//   const number = prompt("enter your numbers (enter quit to exit): ");
-//   if (number.toLowerCase().trim() === "quit") {
-//     break;
-//   }
-//   list2.push(+number);
-// }
+while (true) {
+  const number = prompt("enter your numbers (enter quit to exit): ");
+  if (number.toLowerCase().trim() === "quit") {
+    break;
+  }
+  list2.push(+number);
+}
 
-// function differences(array1, array2) {
-//   const differentNumbers = array1
-//     .map((value) => {
-//       if (!array2.includes(value)) {
-//         return value;
-//       }
-//     })
-//     .filter(Boolean);
-//   return differentNumbers;
-// }
+function differences(array1, array2) {
+  const differentNumbers1 = array1
+    .map((value) => {
+      if (!array2.includes(value)) {
+        return value;
+      }
+    })
+    .filter(Boolean);
+  const differentNumbers2 = array2
+    .map((value) => {
+      if (!array1.includes(value)) {
+        return value;
+      }
+    })
+    .filter(Boolean);
 
-// console.log(differences(list1, list2));
+  return `${differentNumbers1},${differentNumbers2}`;
+}
+
+console.log(differences(list1, list2));
 
 // ------------------------------------------------------------------------------
 // practice-4
