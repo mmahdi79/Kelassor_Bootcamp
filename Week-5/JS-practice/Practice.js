@@ -50,3 +50,39 @@
 // ------------------------------------------------------------------------------------------
 // practice-3
 
+// function rgb(r, g, b) {
+//   r = Math.min(255, Math.max(0, r));
+//   g = Math.min(255, Math.max(0, g));
+//   b = Math.min(255, Math.max(0, b));
+
+//   let hexR = r.toString(16).padStart(2, "0");
+//   let hexG = g.toString(16).padStart(2, "0");
+//   let hexB = b.toString(16).padStart(2, "0");
+
+//   let result = hexR + hexG + hexB;
+
+//   return result.toUpperCase();
+// }
+
+// let R = prompt("enter the red amount:");
+// let B = prompt("enter the blue amount:");
+// let G = prompt("enter the green amount:");
+
+// console.log(rgb(R, B, G));
+
+// ------------------------------------------------------------------------------------------
+// practice-4
+
+// function newString(input) {
+//   inputArray = input.split("");
+//   const inputWords = inputArray.filter((value) => isNaN(value));
+//   const inputNumbers = inputArray.filter((value) => !isNaN(value));
+//   const numericPart = inputNumbers.join("");
+//   const incrementedNumber = (parseInt(numericPart, 10) + 1).toString();
+//   const numZeros = numericPart.length - incrementedNumber.length;
+//   const result = inputWords.join("") + "0".repeat(numZeros) + incrementedNumber;
+//   return result;
+// }
+
+// const sentence = prompt("enter your string: ");
+// console.log(newString(sentence));
