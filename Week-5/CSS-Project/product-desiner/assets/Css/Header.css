@@ -1,0 +1,123 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left .title {
+  color: #292929;
+  text-align: center;
+  font-family: Anton;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -3.3px;
+}
+.left .title p:last-child {
+  font-family: Anton;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+  background: var(
+    --Red_Orange,
+    linear-gradient(90deg, #fa709a 0%, #fee140 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left .header-links {
+  width: 100%;
+}
+.left .header-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left .header-links li {
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  padding: 6px;
+  margin: 40px 1.5vw;
+  transition: all 0.45s ease;
+}
+.left .header-links li:hover {
+  transform: translateY(-15%);
+  box-shadow: 0px 3px 10px black;
+  transition: all 0.45s ease;
+}
+.left .header-button {
+  width: 100%;
+}
+.left .header-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 16px 20px;
+  width: 100%;
+  background-color: #292929;
+  color: #fff;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -1px;
+  transition: all 0.45s ease;
+  gap: 8px;
+}
+.header-button button:hover {
+  background-color: #fff;
+  color: #292929;
+  border: 1px solid #292929;
+  transition: all 0.45s ease;
+}
+.header-button button img {
+  width: 30px;
+  padding: 2px;
+  border-radius: 2px;
+  transition: all 0.45s ease;
+}
+.header-button button:hover img {
+  background-color: #292929;
+  transition: all 0.45s ease;
+}
+.mid,
+.right {
+  display: none;
+}
+@media (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left .title {
+    text-align: left;
+    font-size: 200px;
+    font-family: Anton;
+    font-size: 200px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: -6px;
+  }
+  .left .title p:last-child {
+    font-size: 114px;
+    font-family: Anton;
+    font-size: 114px;
+    font-weight: 400;
+    letter-spacing: -3.42px;
+  }
+  .mid,
+  .right {
+    display: inline-block;
+  }
+  .mid {
+    display: flex;
+    align-self: flex-start;
+    padding: 30px;
+  }
+}
