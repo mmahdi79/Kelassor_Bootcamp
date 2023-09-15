@@ -1,0 +1,93 @@
+.footer {
+  background-color: #292929;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .text {
+  position: absolute;
+  background-color: #a87ff3;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 112px;
+  padding: 26px 89px 26px 28px;
+  margin: 22px;
+  bottom: 67%;
+  color: #fff;
+  font-family: Gotham;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+}
+.footer .text img {
+  width: 82.8px;
+  height: 69px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer .text img:first-child {
+  display: none;
+}
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 100px 0 40px;
+}
+.footer .logo p {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 33.75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.footer .footer-links {
+  border-bottom: 1px solid var(--main-colors-gray-1, #e6e6e6);
+  width: 100%;
+  margin-bottom: 40px;
+}
+.footer .footer-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.footer .footer-links a {
+  color: #fff;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -1px;
+  transition: all 0.45s ease;
+}
+.footer-links a:hover {
+  background-color: #fff;
+  color: #292929;
+  padding: 7px;
+  border-radius: 4px;
+  transition: all 0.45s ease;
+}
+@media (min-width: 480px) {
+  .footer .text {
+    width: 1528px;
+    padding: 0 213px;
+  }
+  .footer .text img:first-child {
+    display: block;
+    bottom: 0;
+    top: 42px;
+    left: 0;
+  }
+}

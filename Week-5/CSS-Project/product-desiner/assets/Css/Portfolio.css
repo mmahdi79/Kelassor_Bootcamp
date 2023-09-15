@@ -1,0 +1,87 @@
+.portfolio {
+  margin: 140px 0;
+}
+.portfolio .sec-frames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.portfolio .header {
+  color: #292929;
+  font-family: Anton;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.portfolio .frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+}
+.portfolio .frame p {
+  color: #292929;
+  font-family: Gotham;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1.4px;
+}
+.portfolio .frame .tags {
+  display: inline-block;
+  display: flex;
+  gap: 5px;
+}
+
+.portfolio .frame .tags p {
+  color: #784dc7;
+  font-family: Gotham;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.7px;
+  border-radius: 12px;
+  border: 1px solid #be9ff6;
+  background: #e9dffc;
+  padding: 4px 8px;
+  transition: all 0.45s ease;
+}
+.portfolio .frame .tags:hover p {
+  color: #fff;
+  transition: all 0.45s ease;
+}
+.portfolio button {
+  background-color: #292929;
+  color: #fff;
+  padding: 12px 24px;
+  width: 100%;
+  border: 1px solid #292929;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+  transition: all 0.45s ease;
+}
+.portfolio button:hover {
+  background-color: #fff;
+  color: #292929;
+  transition: all 0.45s ease;
+}
+@media (min-width: 480px) {
+  .portfolio .sec-frames {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

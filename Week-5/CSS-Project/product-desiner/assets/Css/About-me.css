@@ -1,0 +1,99 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin: 140px 0;
+}
+.about > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.about > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.about div:first-child > div p:first-child {
+  color: #292929;
+  font-family: Anton;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.about > div > div > p {
+  color: #292929;
+  font-family: Gotham;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1.1px;
+}
+.about div:first-child span {
+  background: var(
+    --Red_Orange,
+    linear-gradient(90deg, #fa709a 0%, #fee140 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about div:nth-child(2) span {
+  background: var(
+    --Green_Blue,
+    linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about div:last-child span {
+  background: var(
+    --Blue_Purple,
+    linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about div:last-child span:last-child {
+  background: linear-gradient(
+    90deg,
+    #ffe76a 6.02%,
+    #65c8ff 7%,
+    #65c8ff 14.18%,
+    #65c8ff 20.09%,
+    #f00 20.1%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about > div span {
+  display: inline-block;
+  transition: all 0.45s ease;
+}
+.about > div span:hover {
+  display: inline-block;
+  transform: rotate(10deg);
+  transition: all 0.45s ease;
+}
+@media (min-width: 480px) {
+  .about > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about > div > div img {
+    width: 794px;
+    flex-shrink: 0;
+  }
+  .about > div:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}

@@ -8,6 +8,9 @@
   text-decoration: none;
   list-style: none;
 }
-body{
+.top-page {
+  margin: 0 5%;
+}
+.down-page {
   margin: 0 5%;
 }
