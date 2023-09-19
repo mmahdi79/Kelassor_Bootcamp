@@ -1,0 +1,19 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+  margin: 60px 0;
+}
+.category p > a {
+  text-decoration: underline;
+  color: var(--brand-color-deep-blue, #0432df);
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.14px;
+  text-decoration-line: underline;
+}

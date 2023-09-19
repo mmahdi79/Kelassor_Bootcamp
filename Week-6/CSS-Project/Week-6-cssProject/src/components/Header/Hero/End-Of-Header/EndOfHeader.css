@@ -1,0 +1,17 @@
+.end {
+  margin-bottom: 99px;
+}
+.end p {
+  color: var(--font-color-title-light, #eee);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 172%;
+}
+.end a {
+  text-decoration: underline;
+  color: #eee;
+  margin-left: 5px;
+}

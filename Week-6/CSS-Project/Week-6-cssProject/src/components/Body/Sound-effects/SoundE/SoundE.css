@@ -1,0 +1,20 @@
+.soundE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.soundE p > a {
+  text-decoration: underline;
+  color: var(--brand-color-deep-blue, #0432df);
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138%; /* 19.32px */
+  letter-spacing: -0.7px;
+  text-decoration-line: underline;
+}
+.soundE p {
+  margin-top: 16px;
+}

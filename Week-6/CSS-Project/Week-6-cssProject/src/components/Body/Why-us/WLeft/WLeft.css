@@ -1,0 +1,41 @@
+.why-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+.why-left p:first-child {
+  color: var(--brand-color-brave-yellow, #f59e00);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.why-left p:last-child {
+  color: var(--font-color-title-dark, #020d37);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+}
+
+@media screen and (min-width: 992px) {
+  .why-left {
+    align-items: flex-start;
+  }
+  .why-left p:first-child {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+  }
+  .why-left p:last-child {
+    font-size: 28px;
+    line-height: 45px;
+    text-align: left;
+  }
+}

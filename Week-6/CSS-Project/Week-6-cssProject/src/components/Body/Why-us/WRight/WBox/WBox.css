@@ -1,0 +1,31 @@
+.whyUs-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+}
+.whyUs-box img {
+  width: 56px;
+  height: 56px;
+}
+.whyUs-box > div p:first-child {
+  color: var(--font-color-title-dark, #020d37);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138%;
+}
+.whyUs-box > div p:last-child {
+  color: var(--font-color-description-dark, #4c526a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 172%;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+

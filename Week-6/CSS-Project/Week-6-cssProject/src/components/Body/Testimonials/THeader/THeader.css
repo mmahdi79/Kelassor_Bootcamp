@@ -1,0 +1,26 @@
+.tes-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.tes-header p:first-child {
+  color: var(--brand-color-brave-yellow, #f59e00);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.tes-header p:last-child {
+  color: var(--font-color-title-dark, #020d37);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+}

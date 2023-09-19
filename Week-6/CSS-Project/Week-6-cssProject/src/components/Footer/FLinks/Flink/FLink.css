@@ -1,0 +1,24 @@
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer-link p {
+  color: var(--font-color-title-light, #eee);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138%;
+}
+.footer-link ul a {
+  color: var(--font-color-description-light, #acafb8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 172%;
+  letter-spacing: -0.7px;
+}

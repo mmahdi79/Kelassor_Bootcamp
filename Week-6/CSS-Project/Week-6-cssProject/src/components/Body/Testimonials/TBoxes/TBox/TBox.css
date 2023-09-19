@@ -1,0 +1,45 @@
+.tes-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--font-color-title-light, #eee);
+  padding: 20px;
+}
+.tes-box p:nth-child(2) {
+  color: var(--font-color-description-dark, #4c526a);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 172%;
+}
+.tes-box .person-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tes-box .person-name p:nth-child(2) {
+  color: var(--font-color-title-dark, #020d37);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 172%;
+  letter-spacing: -0.9px;
+}
+.tes-box .person-name p:last-child {
+  color: var(--font-color-description-light, #acafb8);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 172%;
+}

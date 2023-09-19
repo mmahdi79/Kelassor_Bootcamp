@@ -1,0 +1,47 @@
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5vw;
+}
+.nav-link :not(:last-child) a {
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.00875rem;
+  opacity: 0.6;
+  transition: all 0.3s linear;
+  &:hover {
+    opacity: 1;
+  }
+}
+.nav-link li:last-child button {
+  background-color: #0432df;
+  border: 1px solid #0432df;
+  border-radius: 8px;
+  font-family: Poppins;
+  color: #fff;
+  padding: 10px 24px;
+  margin-left: 2vw;
+  transition: all 0.3s ease-out;
+  &:hover {
+    opacity: 0.8;
+    scale: 1.1;
+  }
+}
+.nav-link {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
