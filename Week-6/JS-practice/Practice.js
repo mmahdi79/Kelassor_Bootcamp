@@ -1,88 +1,77 @@
 // practice-1
 
-// function findNumber(word) {
-//   let num = "";
-//   for (let i = 0; i < word.length; i++) {
-//     if (!isNaN(word[i])) {
-//       num += word[i];
-//     }
+// function isValidISBN10(isbn) {
+//   // Remove any hyphens or spaces from the input
+//   isbn = isbn.replace(/[-\s]/g, "");
+
+//   // Check if the ISBN has exactly 10 characters
+//   if (isbn.length !== 10) {
+//     return false;
 //   }
-//   return parseInt(num);
+
+//   // Calculate the checksum
+//   let checksum = 0;
+//   for (let i = 0; i < 9; i++) {
+//     if (!/^\d$/.test(isbn[i])) {
+//       return false; // The first nine characters must be digits
+//     }
+//     checksum += parseInt(isbn[i], 10) * (i + 1);
+//   }
+
+//   // Handle the last character which can be a digit or 'X'
+//   const lastChar = isbn[9];
+//   if (lastChar === "X") {
+//     checksum += 10 * 10;
+//   } else if (/^\d$/.test(lastChar)) {
+//     checksum += parseInt(lastChar, 10) * 10;
+//   } else {
+//     return false; // The last character must be a digit or 'X'
+//   }
+
+//   // Check if the checksum is divisible by 11
+//   return checksum % 11 === 0;
 // }
 
-// function sortString(input) {
-//   if (!input) return "";
-//   splitedString = input.split(" ");
-//   sortedStr = splitedString.sort((a, b) => {
-//     const numA = findNumber(a);
-//     const numB = findNumber(b);
-//     return numA - numB;
-//   });
-//   return sortedStr.join(" ");
-// }
-
-// const stringList = prompt("enter your words (contain a number 1-9): ");
-// const result = sortString(stringList);
-// console.log(result);
+// let ISBN = prompt("enter your numbers: ");
+// console.log(isValidISBN10(ISBN));
 
 // ------------------------------------------------------------------------------------------
 // practice-2
 
-// function formatTime(seconds) {
-//   if (seconds < 0 || seconds > 359999) {
-//     return "Invalid input";
+// function solution(input, markers) {
+//   // Split the input string into lines
+//   const lines = input.split("\n");
+
+//   // Iterate through each line
+//   for (let i = 0; i < lines.length; i++) {
+//     const line = lines[i];
+
+//     // Find the position of the first comment marker in the line
+//     const markerIndex = markers.reduce((minIndex, marker) => {
+//       const index = line.indexOf(marker);
+//       return index !== -1 && (minIndex === -1 || index < minIndex)
+//         ? index
+//         : minIndex;
+//     }, -1);
+
+//     // Remove the portion of the line after the comment marker (if found)
+//     if (markerIndex !== -1) {
+//       lines[i] = line.substring(0, markerIndex).trimRight();
+//     }
 //   }
 
-//   const hours = Math.floor(seconds / 3600);
-//   const minutes = Math.floor((seconds % 3600) / 60);
-//   const remainingSeconds = seconds % 60;
-
-//   const formattedHours = String(hours).padStart(2, "0");
-//   const formattedMinutes = String(minutes).padStart(2, "0");
-//   const formattedSeconds = String(remainingSeconds).padStart(2, "0");
-
-//   return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+//   // Join the modified lines back into a single string
+//   return lines.join("\n");
 // }
 
-// const time = prompt("enter your time in second: ");
-// console.log(formatTime(time));
+// var result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", [
+//   "#",
+//   "!",
+// ]);
+// console.log(result);
 
 // ------------------------------------------------------------------------------------------
 // practice-3
 
-// function rgb(r, g, b) {
-//   r = Math.min(255, Math.max(0, r));
-//   g = Math.min(255, Math.max(0, g));
-//   b = Math.min(255, Math.max(0, b));
-
-//   let hexR = r.toString(16).padStart(2, "0");
-//   let hexG = g.toString(16).padStart(2, "0");
-//   let hexB = b.toString(16).padStart(2, "0");
-
-//   let result = hexR + hexG + hexB;
-
-//   return result.toUpperCase();
-// }
-
-// let R = prompt("enter the red amount:");
-// let B = prompt("enter the blue amount:");
-// let G = prompt("enter the green amount:");
-
-// console.log(rgb(R, B, G));
-
 // ------------------------------------------------------------------------------------------
 // practice-4
-
-// function newString(input) {
-//   inputArray = input.split("");
-//   const inputWords = inputArray.filter((value) => isNaN(value));
-//   const inputNumbers = inputArray.filter((value) => !isNaN(value));
-//   const numericPart = inputNumbers.join("");
-//   const incrementedNumber = (parseInt(numericPart, 10) + 1).toString();
-//   const numZeros = numericPart.length - incrementedNumber.length;
-//   const result = inputWords.join("") + "0".repeat(numZeros) + incrementedNumber;
-//   return result;
-// }
-
-// const sentence = prompt("enter your string: ");
-// console.log(newString(sentence));
