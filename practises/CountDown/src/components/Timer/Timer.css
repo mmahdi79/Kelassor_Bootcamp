@@ -1,0 +1,72 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16vh auto 6.4vh;
+  width: 72vw;
+  background-color: #202024;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px;
+}
+.timer h1 {
+  font-size: 16vw;
+  text-align: center;
+  color: #e1e1e6;
+}
+.timer span {
+  color: #00875f;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4vh;
+}
+.controls button {
+  all: unset;
+  background-color: #00875f;
+  width: 32vw;
+  padding: 16px 24px;
+  margin-bottom: 1.6vh;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+  transition: all 0.2s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.controls button:nth-child(2) {
+  background-color: #ab222e;
+}
+.controls button:last-child {
+  background-color: #e8e8e8;
+  color: #000;
+}
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  margin: auto;
+  width: 32vw;
+}
+.numpad button:last-child {
+  grid-column: span 2;
+  &:hover {
+    background-color: #ffcfcf;
+  }
+}
+.numpad button {
+  all: unset;
+  padding: 24px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 2vw;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: #cffffc;
+  }
+}
