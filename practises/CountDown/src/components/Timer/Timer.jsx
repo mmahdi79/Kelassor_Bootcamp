@@ -48,7 +48,7 @@ export const Timer = ({ initialMinutes, initialSeconds }) => {
     setSeconds(initialSeconds);
   };
   const handleDigitClick = (digit) => {
-    if (minutes === 0 && seconds === 0) {
+    if (seconds === 0 && seconds === 0) {
       setSeconds(seconds + digit);
     } else if (seconds < 10) {
       setSeconds(seconds * 10 + digit);
