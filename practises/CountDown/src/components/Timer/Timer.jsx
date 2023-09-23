@@ -49,19 +49,19 @@ export const Timer = ({ initialMinutes, initialSeconds }) => {
   };
   const handleDigitClick = (digit) => {
     if (minutes === 0 && seconds === 0) {
-      setMinutes(digit);
-    } else if (minutes < 10) {
-      setMinutes(minutes * 10 + digit);
+      setSeconds(seconds + digit);
     } else if (seconds < 10) {
       setSeconds(seconds * 10 + digit);
+    } else if (minutes < 10) {
+      setMinutes(minutes * 10 + digit);
     }
   };
 
   const clearLastDigit = () => {
-    if (seconds > 0) {
-      setSeconds(Math.floor(seconds / 10));
-    } else if (minutes > 0) {
+    if (minutes > 0) {
       setMinutes(Math.floor(minutes / 10));
+    } else if (seconds > 0) {
+      setSeconds(Math.floor(seconds / 10));
     }
   };
   return (
