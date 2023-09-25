@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background: #fcfcfc;
+  padding: 12px 20px;
+  width: 100%;
+  margin-bottom: 32px;
+}

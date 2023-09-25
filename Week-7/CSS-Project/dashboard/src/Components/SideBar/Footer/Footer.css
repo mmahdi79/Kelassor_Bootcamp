@@ -1,0 +1,24 @@
+.side-bar-footer {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background-color: #e8ecfd;
+  margin-top: 24rem;
+}
+.side-bar-footer div p:first-child {
+  color: #171923;
+  font-family: Pulp Display;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0.8rem 0 2rem;
+}
+.side-bar-footer p:last-child a {
+  color: #4361ee;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 1px solid #4361ee;
+}
