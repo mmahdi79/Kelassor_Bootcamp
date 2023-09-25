@@ -5,7 +5,7 @@ import "./Left.css";
 
 export const Left = () => {
   return (
-    <div>
+    <div className="left">
       <AddStories />
       <CreatePost />
     </div>

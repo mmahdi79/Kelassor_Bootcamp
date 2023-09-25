@@ -1,0 +1,27 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+.buttons a button {
+  all: unset;
+  background-color: #4361ee;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.2s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
