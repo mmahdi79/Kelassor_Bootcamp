@@ -1,7 +1,6 @@
 // import React from "react";
 import PropTypes from "prop-types";
 
-import { ContactList } from "../ContactList";
 
 export const Contact = ({ name, image }) => {
   return (
@@ -13,7 +12,7 @@ export const Contact = ({ name, image }) => {
     </li>
   );
 };
-ContactList.propTypes = {
+Contact.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
 };
