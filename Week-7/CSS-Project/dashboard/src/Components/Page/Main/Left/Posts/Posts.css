@@ -1,0 +1,62 @@
+.post-item {
+  padding: 24px;
+  background-color: #fff;
+  margin-top: 24px;
+  border-radius: 12px;
+}
+
+.post-text {
+  color: #5b5d67;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+.post-likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.post-likes > span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.post-likes > span p {
+  color: #5b5d67;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+}
+.post-likes span:last-child {
+  margin-left: auto;
+}
+.post-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.post-comment input {
+  background-color: #fafbff;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 12px;
+}
+.post-comment input::placeholder {
+  color: #5b5d67;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
