@@ -1,0 +1,84 @@
+.side-bar {
+  width: 282px;
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* --------------SideBar-Logo-------------- */
+.side-bar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.side-bar-logo p {
+  color: #000;
+  font-family: Pulp Display;
+  font-size: 25.364px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* --------------SideBar-Lists-------------- */
+.side-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.side-bar-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #eaedfb;
+  }
+}
+.side-bar-list a {
+  color: #171923;
+  font-family: Pulp Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.side-bar-list img {
+  width: 20px;
+  height: 20px;
+}
+/* --------------SideBar-Footer-------------- */
+.side-bar-footer {
+  width: 100%;
+  background-color: #e8ecfd;
+  padding: 20px;
+  margin-top: auto;
+  border-radius: 10px;
+}
+.side-bar-footer span p {
+  color: #171923;
+  font-family: Pulp Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 16px 0 32px;
+}
+.side-bar-footer span > span {
+  border-bottom: 1px solid #4361ee;
+  padding-bottom: 4px;
+}
+.side-bar-footer span > span a {
+  color: #4361ee;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

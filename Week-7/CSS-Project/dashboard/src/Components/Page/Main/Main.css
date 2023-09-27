@@ -1,8 +1,0 @@
-.main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-.main .left {
-  grid-column: 3 span;
-}
